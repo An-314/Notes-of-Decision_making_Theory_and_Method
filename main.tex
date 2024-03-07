@@ -1,0 +1,113 @@
+\documentclass[12pt,onecolumn,a4paper]{book}
+
+%% 引用宏包 %%
+\usepackage{ctex}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{amsmath,amssymb,amsthm,multicol,siunitx,graphicx,enumitem,booktabs,appendix}
+\usepackage{booktabs}
+\usepackage{tabularx,subcaption,arydshln}
+\usepackage{tikz}
+\usepackage{arydshln}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usepackage[edges]{forest}
+\usepackage{pgfplots}
+\usepackage{bm}
+
+\usetikzlibrary{matrix, positioning, arrows}
+\usepackage{imakeidx}
+\usepackage{hyperref}
+
+\usepackage[most]{tcolorbox}
+% 定义 block 环境
+\newenvironment{block}[1]{
+    \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=#1]
+}{
+    \end{tcolorbox}
+}
+
+\usepackage{listings}
+
+\lstdefinestyle{lfonts}{
+  basicstyle   = \scriptsize\ttfamily,
+  stringstyle  = \color{purple},
+  keywordstyle = \color{blue!60!black}\bfseries,
+  commentstyle = \color{olive}\scshape,
+}
+\lstdefinestyle{lnumbers}{
+  numbers     = left,
+  numberstyle = \tiny,
+  numbersep   = 1em,
+  firstnumber = 1,
+  stepnumber  = 1,
+}
+\lstdefinestyle{llayout}{
+  breaklines       = true,
+  tabsize          = 2,
+  columns          = spacefixed,
+}
+\lstdefinestyle{lgeometry}{
+  xleftmargin      = 20pt,
+  xrightmargin     = 0pt,
+  frame            = tb,
+  framesep         = \fboxsep,
+  framexleftmargin = 20pt,
+}
+\lstdefinestyle{lgeneral}{
+  style = lfonts,
+  style = lnumbers,
+  style = llayout,
+  style = lgeometry,
+}
+
+\lstset{style = lgeneral}
+\lstset{language = python}
+
+
+
+%% 定义新定理 %%
+\newtheorem*{example}{例}
+\newtheorem*{lemma}{引理}
+\newtheorem*{note}{注}
+
+%% 设置初始编号 %%
+\setcounter{tocdepth}{3}
+\setcounter{section}{0}
+\setcounter{chapter}{-1}
+\numberwithin{table}{subsection}
+\numberwithin{equation}{subsection}
+
+%% 设置超链接 %%
+\hypersetup{
+    hidelinks, % 取消红框
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=black
+}
+
+%% BibTeX %%
+\bibliographystyle{plain}
+% \bibliography{}
+
+%% 标题 %%
+\title{决策方法论}
+\author{AnZreww}
+\date{癸卯秋冬于清华园}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\include{chapter_0}
+
+\include{chapter_1}
+
+\include{chapter_2}
+
+% \include{chapter_3}
+
+
+\end{document}

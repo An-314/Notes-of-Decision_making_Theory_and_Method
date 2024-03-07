@@ -1,0 +1,88 @@
+\chapter{课程概要}
+
+\section{课程简介}
+
+决策过程。
+
+\begin{example}
+    博弈论中的囚徒困境。
+
+    \href{https://zh.wikipedia.org/wiki/%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83}{囚徒困境}反应个人理性和集体理性的矛盾。\href{https://zh.wikipedia.org/wiki/%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1}{纳什均衡}是非合作博弈均衡。囚徒困境是混合策略纳什均衡：混合策略是给每一个纯策略分配一个概率，玩家的策略集是一个样本空间。
+
+    例如：AB互相同时给出硬币的正反面，表格内(a,b)为在该情况下A、B的获利：
+    \begin{table}[htbp]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            A$\diagup $B & 正     & 反     \\
+            \hline
+            正            & +3,-3 & -2,+2 \\
+            \hline
+            反            & -2,+2 & +1,-1 \\
+            \hline
+        \end{tabular}
+    \end{table}
+
+    B同学用Nash均衡选择自己的策略：他决定出正面的概率为$p$。从而：
+
+    A出正的时候B的获利：$3p - 2(1-p) $，A出反的时候B的获利：$-2p + (1-p) $。Nash均衡意味着二者相等，得到 $p=3/8$
+
+    可以进一步地算出B的获利期望。
+\end{example}
+
+\section{课程内容}
+
+\subsection{Markov决策过程（MDP）}
+
+系统介绍复杂大系统决策方法的理论和应用。具体内容包括Markov决策过程，动态规划算法，实时数值迭代模拟方法，策略搜索方法，以及在大型突发事件应急管理过程中的动态资源分配、排队网络的应用方法。
+
+重点介绍的分析内容及主要方法包括：
+
+\begin{enumerate}[itemsep=0pt,parsep=0pt]
+    \item 有限阶段问题
+    \item 折扣成本问题
+    \item 数值迭代方法
+    \item 策略迭代方法
+\end{enumerate}
+
+\subsection{数据驱动的风险量化分析与建模}
+
+基于历史灾害数据，通过学习统计分析、机器学习等多因素分析方法，实现对环境、社会等多种因素致灾风险的定量评估，并构建相应风险评估模型， 为决策制定提供数据基础。
+
+本部分重点介绍的主要分析方法将包括：
+
+\begin{enumerate}[itemsep=0pt,parsep=0pt]
+    \item 混合线性模型（LME）
+    \item 固定效应、随机效应、混合效应
+    \item Logistic回归模型
+    \item 广义可加模型（GAM）
+    \item 强化机器学习模型
+\end{enumerate}
+
+\subsection{群决策与社会选择理论}
+
+在个体决策的基础上， 本部分将进一步介绍多主体系统的决策理论和方法。 该部分将主要介绍多主体（Multi-Agent） 之间交互，以及多主体之间自身利益最大化， 以及相互协作等不同决策策略， 多主体决策理论是博弈论的主要分支。
+
+本部分重点介绍的主要分析方法将包括：
+
+\begin{enumerate}[itemsep=0pt,parsep=0pt]
+    \item 群决策与社会选择理论
+    \item 群决策概论
+    \item 博弈论方法及算法
+    \item 多目标群决策方法
+    \item 冲突分析理论和方法
+    \item 社会选择理论
+\end{enumerate}
+
+\subsection{数字化决策方法}
+
+整合并清洗，整理，归类数据到基础数据仓库或者数据湖，集合先进模型、算法以及人工智能的数据分析软件工具，全面贯彻数字化概念，依靠数据分析进行决策的方法。
+
+本部分重点介绍的主要分析方法将包括：
+
+\begin{enumerate}[itemsep=0pt,parsep=0pt]
+    \item 疫情预测模型
+    \item 舆情分析模型
+    \item 神经网络模型
+    \item 深度学习模型
+\end{enumerate}
